@@ -17,6 +17,7 @@ import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.example.videoplayer.R;
+import com.example.videoplayer.full.VideoViewActivity;
 
 import java.io.IOException;
 
@@ -127,8 +128,8 @@ public class SimpleVideoPlayer extends FrameLayout {
         btnFullScreen.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
-                // TODO: 2017/1/2 跳转至全屏页面
-                Toast.makeText(getContext(), "全屏页面待实现", Toast.LENGTH_SHORT).show();
+                //  跳转至全屏页面
+                VideoViewActivity.open(getContext(),videoPath);
             }
         });
     }
